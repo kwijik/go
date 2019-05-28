@@ -38,18 +38,14 @@ class Goban(object):
         visited = []
         this_status = self.get_status(x,y)
         while (neighbours):
-            cell = neighbours.pop() # берем последний
-            #print("x:" + str(cell[0]) +" y:"+str(cell[1]))
+            cell = neighbours.pop() 
             if(cell in visited):
-                #print("visited works")
                 continue
             else:
                 visited.append((cell[0], cell[1]))
-            #print("after if")
             if (self.get_status(cell[0], cell[1]) == Status.EMPTY):
                 return False
             if(self.get_status(cell[0], cell[1]) != this_status):
-                
                 continue
 
             neighbours.append((cell[0],cell[1]-1))
