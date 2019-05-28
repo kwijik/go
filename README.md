@@ -1,5 +1,5 @@
 # go
-Python/algo test
+Python/algo test  
 Le thème de ce test est le jeu de go.
 
 Le but est d'écrire une fonction qui détermine si la pierre à une position x, y sur un goban est prise ou pas.
